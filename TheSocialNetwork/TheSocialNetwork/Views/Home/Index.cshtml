@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "News Feed";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model List<TheSocialNetwork.Data.Entities.Post>
+
+<div id="input">
+    @using (Ajax.BeginForm("Post", "Home", null))
+    {
+        <div>
+            <label>Title</label>
+            @Html.TextBox("Title")
+        </div>
+        <div>
+            <label>Post</label>
+            @Html.TextArea("Content")
+        </div>
+        <input type="submit" value="Post"/>
+    }
+</div>
+
+@foreach (var post in Model)
+{
+    <div class="post">
+        <div class="title">
+            @post.Title
+        </div>
+        <div class="content">
+            @post.Content
+        </div>
+    </div>
+}

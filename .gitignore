@@ -3,3 +3,8 @@
 ################################################################################
 
 /TheSocialNetwork/TheSocialNetwork/bin
+/TheSocialNetwork/TheSocialNetwork/obj/Debug
+/TheSocialNetwork/TheSocialNetwork.Data/bin/Debug
+/TheSocialNetwork/TheSocialNetwork.Data/obj/Debug
+/TheSocialNetwork/TheSocialNetwork.Service/bin/Debug
+/TheSocialNetwork/TheSocialNetwork.Service/obj/Debug
