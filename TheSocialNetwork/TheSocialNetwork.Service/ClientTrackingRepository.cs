@@ -21,6 +21,8 @@ namespace TheSocialNetwork.Service
 
         public IQueryable<PersonalInformation> ClientsByRelationshipStatus(short statusId)
         {
+            // What is wrong with this query??????
+
             return _databaseContext.RelationshipStatuses
                                         .First(x => x.Id == statusId)
                                         .PersonalInformation.AsQueryable();

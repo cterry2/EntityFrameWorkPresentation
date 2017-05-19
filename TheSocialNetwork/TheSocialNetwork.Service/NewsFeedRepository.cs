@@ -21,6 +21,8 @@ namespace TheSocialNetwork.Service
         }
         public IQueryable<Post> GetPosts(long userId)
         {
+            // What if this query is slow? What can we do to improve it?
+
             var friendsOfMine = _databaseContext.Posts.Where(x => x.User.FriendShips.Any(y => y.UserId == userId));
             var myFriends = _databaseContext.Posts.Where(x => x.User.MyFriends.Any(y => y.FriendId == userId));
 

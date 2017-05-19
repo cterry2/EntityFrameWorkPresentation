@@ -11,9 +11,10 @@ namespace TheSocialNetwork.Data
     {
         public DatabaseContext() : base("TheSocialNetwork")
         {
-            Configuration.LazyLoadingEnabled = true;
-            
+            Configuration.LazyLoadingEnabled = true;            
         }
+
+        // Use IDbSet instead of DbSet
 
         public IDbSet<User> Users { get; set; }
         public IDbSet<Address> Addresses { get; set; }
@@ -28,6 +29,8 @@ namespace TheSocialNetwork.Data
 
         public override int SaveChanges()
         {
+            // Allow for overrides before saving
+
             var selectedEntityList = ChangeTracker.Entries()
                                     .Where(x => x.Entity is ITimeStampEntity &&
                                     (x.State == EntityState.Added || x.State == EntityState.Modified));

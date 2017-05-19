@@ -84,6 +84,14 @@
     <Compile Include="Migrations\201705072123013_ThirdUpdate.Designer.cs">
       <DependentUpon>201705072123013_ThirdUpdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705182059084_missedidentity.cs" />
+    <Compile Include="Migrations\201705182059084_missedidentity.Designer.cs">
+      <DependentUpon>201705182059084_missedidentity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705191357006_changedpostid.cs" />
+    <Compile Include="Migrations\201705191357006_changedpostid.Designer.cs">
+      <DependentUpon>201705191357006_changedpostid.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -103,6 +111,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705072123013_ThirdUpdate.resx">
       <DependentUpon>201705072123013_ThirdUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705182059084_missedidentity.resx">
+      <DependentUpon>201705182059084_missedidentity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705191357006_changedpostid.resx">
+      <DependentUpon>201705191357006_changedpostid.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

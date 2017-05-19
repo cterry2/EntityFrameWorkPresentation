@@ -5,7 +5,7 @@ namespace TheSocialNetwork.Data.Entities
 {
     public class Post : ITimeStampEntity
     {
-        public Guid Id { get; set; }
+        public long Id { get; set; }
         public string Content { get; set; }
         public string Title { get; set; }
         public DateTime TimeStamp { get; set; }
